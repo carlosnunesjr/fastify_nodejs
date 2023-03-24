@@ -1,6 +1,6 @@
 import { knex as setupKnex, Knex } from "knex";
 import { env } from "./env";
-
+console.log("database env", env);
 export const config: Knex.Config = {
   client: env.DATABASE_CLIENT,
   connection:
